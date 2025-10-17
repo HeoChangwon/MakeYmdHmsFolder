@@ -1,6 +1,28 @@
-
+2025-10-17(금) 20:34:37 허창원
   Prompt:
 
+    A25101751_MakeYmdHmsFolder.py 스크립트가 명령행 인자 없이 호출되었을 때, 
+    기본적으로 사용할 명령행 인자를 스크립트 앞쪽에 "--nowait-exit --mode 4"로 정의해 주세요.
+    필요에 따라 직접 수정해서 사용할 예정입니다.
+
+    명령행 인자가 명시적으로 제공되어 호출되었을 때에는 기본 명령행 인자는 무시됩니다.
+
+    MakeYmdHmsFolder 작업 폴더 구조와 개발관련 문서는 다음과 같습니다.
+
+      작업 폴더 구조는 다음과 같습니다.
+      ```
+      D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\
+      ├── Documents\              (MYHF Documents 폴더)
+      │   ├── 2025\
+      │   │   └── 10\
+      │   └── Project_overview\
+      └── MakeYmdHmsFolder\      (MakeYmdHmsFolder 메인 폴더)
+      ```
+
+      Project_overview 폴더의 다음 파일을 참고
+      ```
+      20251017_1355_MYHF_Quick_Reference_v01.md
+      ```
 
 
   Prompt:
@@ -32,14 +54,14 @@
 요약 및 프롬프트 양식 샘플 ------------------------------
 MakeYmdHmsFolder (MYHF)
 
-20250904_2004 : Prompt
-20250904_2005 : Development note
-20250904_2006 : Chat
-20250904_2007 : Work list
-20250904_2008 : Next chat prompt
+20251017_2029 : Prompt
+20251017_2030 : Development note
+20251017_2031 : Chat
+20251017_2032 : Work list
+20251017_2033 : Next chat prompt
 
   chat export하여 저장할 파일명(Documents 폴더)
-    /export .\Documents\20250904_2006_MYHF_Chat.txt
+    /export .\Documents\2025\10\20251017_2041_MYHF_Chat.txt
         
         
   Claude Code 새 Chat Session 시작시 프롬프트:

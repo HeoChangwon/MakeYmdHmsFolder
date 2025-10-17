@@ -18,7 +18,11 @@ from pathlib import Path
 # ============================================================================
 BASE_FILENAME_PREFIX = "A25101751_MakeYmdHmsFolder"
 BASE_FILENAME_ABBR = "MYHF"
-DEFAULT_MODE = 5  # 기본 폴더명 조합 방식 (5: YYYYMMDD_HHMM)
+DEFAULT_MODE = 6  # 기본 폴더명 조합 방식 (6: YYYYMMDD_HHMMSS)
+
+# 명령행 인자 없이 실행할 때 사용할 기본 인자
+# 명령행 인자가 명시적으로 제공되면 이 값은 무시됩니다.
+DEFAULT_COMMAND_ARGS = "--nowait-exit --mode 5"
 
 # ============================================================================
 # 메인 로직
@@ -58,6 +62,10 @@ def create_folder(target_path, folder_name):
 
 def main():
     """메인 함수"""
+    # 명령행 인자가 제공되지 않은 경우 기본 인자 사용
+    if len(sys.argv) == 1:
+        sys.argv.extend(DEFAULT_COMMAND_ARGS.split())
+
     # 명령행 인자 파서 설정
     parser = argparse.ArgumentParser(
         description=f"{BASE_FILENAME_PREFIX} - 연월일_시분초 형식의 폴더 생성 스크립트",
