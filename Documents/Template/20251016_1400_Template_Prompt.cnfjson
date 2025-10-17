@@ -1,0 +1,77 @@
+﻿{
+  "version": "1.0",
+  "name": "20251016_1400_Template_Prompt",
+  "description": "20251016_1400_Template_Prompt",
+  "fileInfo": {
+    "dateTime": "2025-10-17T12:11:24.9478507+09:00",
+    "abbreviation": "MYHF",
+    "title": "Prompt",
+    "suffix": "draft",
+    "extension": ".txt",
+    "isDateTimeEnabled": true,
+    "isAbbreviationEnabled": true,
+    "isTitleEnabled": true,
+    "isSuffixEnabled": false
+  },
+  "outputPath": "D:\\Work_Claude\\2025\\10\\A25101751_MakeYmdHmsFolder\\Documents\\2025\\10",
+  "templatePath": "D:\\Work_Claude\\2025\\10\\A25101751_MakeYmdHmsFolder\\Documents\\Template\\20251016_1400_Template_Prompt.txt",
+  "stringReplacements": [
+    {
+      "id": "8fc8db3a-ed92-4f14-93a5-e40b57ad5add",
+      "searchText": "20250904_2004",
+      "replaceText": "YYYYMMDD_HHMM",
+      "isEnabled": true,
+      "isCaseSensitive": false,
+      "useRegex": false,
+      "useDynamicReplacement": true,
+      "description": "Prompt",
+      "createdAt": "2025-10-17T12:11:30.6751787+09:00"
+    },
+    {
+      "id": "826af468-0f0e-4a91-8bb6-b7d4fc3a5738",
+      "searchText": "20250904_2005",
+      "replaceText": "YYYYMMDD_HHMM+1",
+      "isEnabled": true,
+      "isCaseSensitive": false,
+      "useRegex": false,
+      "useDynamicReplacement": true,
+      "description": "Development note",
+      "createdAt": "2025-10-17T12:11:30.6751803+09:00"
+    },
+    {
+      "id": "788ed624-615b-46c0-bb71-ff4919a60cbf",
+      "searchText": "20250904_2006",
+      "replaceText": "YYYYMMDD_HHMM+2",
+      "isEnabled": true,
+      "isCaseSensitive": false,
+      "useRegex": false,
+      "useDynamicReplacement": true,
+      "description": "Chat",
+      "createdAt": "2025-10-17T12:11:30.6751828+09:00"
+    },
+    {
+      "id": "c2898b54-bf69-4085-9a0f-b64f59b69cc4",
+      "searchText": "20250904_2007",
+      "replaceText": "YYYYMMDD_HHMM+3",
+      "isEnabled": true,
+      "isCaseSensitive": false,
+      "useRegex": false,
+      "useDynamicReplacement": true,
+      "description": "Work list",
+      "createdAt": "2025-10-17T12:11:30.6751847+09:00"
+    },
+    {
+      "id": "5ec37958-4c93-40e5-99fd-93fcec6828c3",
+      "searchText": "20250904_2008",
+      "replaceText": "YYYYMMDD_HHMM+4",
+      "isEnabled": true,
+      "isCaseSensitive": false,
+      "useRegex": false,
+      "useDynamicReplacement": true,
+      "description": "Next chat prompt",
+      "createdAt": "2025-10-17T12:11:30.6751857+09:00"
+    }
+  ],
+  "createdAt": "2025-10-17T12:11:30.6751858+09:00",
+  "modifiedAt": "2025-10-17T12:11:30.6757551+09:00"
+}

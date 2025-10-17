@@ -1,0 +1,109 @@
+다음 요구사항 명세서대로 D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\MakeYmdHmsFolder 폴더에 Python 스크립트와 batch 파일을 만들어 주세요.
+
+# 요구사항 명세서(Requirements Specification) : MakeYmdHmsFolder
+    
+## 1. 개발개요
+  - 폴더 내에 연월일_시분초 같은 이름의 폴더를 생성하는  Python 스크립트(A25101751_MakeYmdHmsFolder.py)를 개발합니다
+  - 이 스크립트에 인자를 전달할 수 있는 batch 파일(A25101751_MakeYmdHmsFolder.bat)도 함께 만듭니다.
+    
+## 2. 기본문자열
+  - 스크립트 파일명, 입력 파일명(설정파일, 입력파일 등)에 접두어로 사용될 기본 문자열(BASE_FILENAME_PREFIX)은 A25101751_MakeYmdHmsFolder 입니다.
+  - 결과파일명, Log 파일명에 접두어로 사용될 기본 약어 문자열(BASE_FILENAME_ABBR)은 MYHF 입니다.
+
+## 3. 사용방법
+  - 폴더를 생성하기 원하는 폴더에 Python 스크립트 파일을 옮겨놓고 거기서 더블클릭하여 실행할 것입니다.
+  - 명령행 인자를 사용할 경우에는 batch 파일로 호출하여 사용할 것입니다.
+  
+## 4. 명령행 인자
+- 명령행 인자는 옵션 인자(optional arguments) 방식을 이용합니다.
+- 옵션인자는 긴 형식(이중 대시와 이름)을 이용합니다.
+- 사용가능한 옵션인자와 그 설명은 다음과 같습니다.
+
+    값이 없는 Flag 옵션인자
+    ```
+    --help : 사용방법을 알려줍니다.
+    --nowait-exit : 스크립트 종료 전에 대기하지 않기
+    ```
+
+    하나의 값을 갖는 옵션인자
+    ```
+    --mode : 폴더명 조합 방식을 지정합니다.(6:YYYYMMDD_HHMMSS, 5:YYYYMMDD_HHMM, 4:YYYYMMDD_HH, 3:YYYYMMDD, 2:YYYYMM, 1:YYYY)
+    --folder : 대상폴더 경로를 값으로 지정합니다. (생략하면 현재 폴더에 생성)
+    ```
+
+## 5. 결과 생성 방법
+  - --mode 옵션에 따라 폴더를 생성합니다. 이 옵션을 생략하면 Python 스크립트 내에 기본 지정된 방식으로 폴더를 생성합니다.
+  - --nowait-exit 옵션이 사용되지 않았다면, 사용자가 키를 입력할 때까지 종료하지 않고 대기합니다.
+
+## 6. Log 파일
+  - Log 파일은 만들지 않습니다.
+
+## 7. 주의사항
+  - 스크립트 파일이나 batch파일은 한글 인코딩에 구애받지 않도록 합니다.
+  - 경로명 중에는 한글이나 공백문자도 있을 수 있는 것을 감안합니다.
+  - 스크립트 파일 내에서 이용되는 기본 문자열 A25101751_MakeYmdHmsFolder 과 기본 약어 문자열 MYHF, 기본 mode(폴더명 조합 방식) 를 스크립트 앞쪽에서 변경할 수 있도록 해주세요.
+
+
+  Prompt:
+
+사용 매뉴얼 A25101751_MakeYmdHmsFolder_Manual.md 파일로 만들고,
+간단한 사용 매뉴얼을 A25101751_MakeYmdHmsFolder_Simple_manual.md 파일로 만들어 주세요.
+
+
+2025-10-17(금) 13:53:50 허창원
+  Prompt:
+
+    다음에 나오는 YYYYMMDD_HHMM 은 Powershell 로 시스템의 현재 일시를 갖고와서 다음 파일명에 조합해 주세요.
+      
+    이번 Chat에서 작업한 내용을 
+    D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\Documents\2025\10 폴더에
+    YYYYMMDD_HHMM_MYHF_Work_list.md 파일로 한글 위주로 정리해 주세요.
+
+    그리고 나서, Powershell 로 시스템의 새로운 현재 일시를 갖고와서 다음 파일명에 조합해 주세요.
+
+    새로운 Chat 시작시에 사용할 
+    Quick Reference를 
+    D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\Documents\Project_overview 폴더에
+    YYYYMMDD_HHMM_MYHF_Quick_Reference_v01.md 파일로 만들어 주세요.
+
+  Prompt:
+
+
+
+  Prompt:
+
+
+
+  Prompt:
+
+
+
+  Prompt:
+
+
+
+  Prompt:
+
+
+------------------------------------------------------------  
+
+  chat export하여 저장할 파일명(Documents 폴더)
+    /export .\Documents\2025\10\20251017_1618_MYHF_Chat.txt
+    
+------
+
+다음에 나오는 YYYYMMDD_HHMM 은 Powershell 로 시스템의 현재 일시를 갖고와서 다음 파일명에 조합해 주세요.
+  
+이번 Chat에서 작업한 내용을 
+D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\Documents\2025\10 폴더에
+YYYYMMDD_HHMM_MYHF_Work_list.md 파일로 한글 위주로 정리해 주세요.
+
+그리고 나서, Powershell 로 시스템의 새로운 현재 일시를 갖고와서 다음 파일명에 조합해 주세요.
+
+새로운 Chat 시작시에 사용할 
+Quick Reference를 
+D:\Work_Claude\2025\10\A25101751_MakeYmdHmsFolder\Documents\Project_overview 폴더에
+YYYYMMDD_HHMM_MYHF_Quick_Reference_v01.md 파일로 만들어 주세요.
+
+-----
+    
